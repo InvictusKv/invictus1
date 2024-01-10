@@ -1,0 +1,1695 @@
+:root {
+    --clr-neutral-900:hsl(207,19%,9%);
+    --clr-neutral-100:hsl(0,0%,100%);
+    --crl-accent-400:hsl(142 90% 61%);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.header{
+    background: url("src/istockphoto-930704232-640_adpp_is.mp4");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-left: 45px;
+  padding-right:45px;
+  margin: auto;
+  
+}
+
+nav li{
+
+    list-style: none;
+    margin-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:#ffff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.4s;
+    display: inline-block;
+    
+
+}
+
+nav ul{
+    display: flex;
+    padding-top:25px;
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.more1{
+    padding: 15px 33px;
+    background: rgba(255, 251, 251, 0);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 251, 251, 0.29);
+    color:#ffff;
+    font-weight: bold;
+    font-size: 16px;
+    float: right;
+    transition: all 0.4s;
+}
+
+.more1:hover{
+    transform: scale(1.1);
+}
+
+.more2{
+    padding: 15px 33px;
+    background: rgba(255, 251, 251, 0);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 251, 251, 0.29);
+    color:#ffff;
+    font-weight: bold;
+    font-size: 16px;
+    float: right;
+    transition: all 0.4s;
+}
+
+.more2:hover{
+    transform: scale(1.1);
+}
+
+nav li:hover{
+    transform: scale(1.1);
+    text-shadow:  0 0 5px #ffff,
+                  0 0 20px #ffff,
+                  0 0 40px #ffff,
+                  0 0 120px #ffff,
+                  0 0 160px #ffff;
+    
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index:999;
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar li{
+    width:100%;
+    text-align: center;
+    padding-top: 55px;
+
+}
+
+.sidebar a{
+    width:100%;
+}
+
+.menuicon{
+    fill:white;
+    display: none;
+    padding-top:20px;
+}
+
+.closeicon{
+    fill:white;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width:855px){
+    nav ul{
+        display:none;
+    }
+
+    .menuicon{
+        display: flex;
+    }
+
+    .more1{
+        display:none;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .center img{
+        position: absolute;
+        top: 15%;
+    }
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.2;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+
+}
+
+.bar{
+    align-items: center;
+}
+
+.center img{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    padding-top:80px;
+    
+}
+
+.center h3{
+   
+    text-align:center;
+    color: #ffff;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+.kl{
+    text-align:center;
+    color: #ffff;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.rowitems{
+    position: absolute;
+    left: 50%;
+    top: 79%;
+    transform: translateX(-50%) translateY(-50% );
+    display: flex;
+    
+}
+
+.btnk{
+    padding: 15px 33px;
+    background: linear-gradient(#000032,#000032) padding-box,linear-gradient(#267ee7, #00d4ff) border-box;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid transparent;
+    color:#ffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 70px;
+    transition: all 0.4s;
+    width: 100%;
+}
+
+.btnk:hover{
+    transform: scale(1.1);
+}
+
+.btn1{
+    padding-right:15px;
+}
+
+@media screen and (max-width:638px){
+    .kl{
+        text-align:center;
+        color: #ffff;
+        text-transform:uppercase;
+        font-family: sans-serif;
+        font-size: 18px;
+        position: absolute;
+        top:90%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .center h3{
+   
+        text-align:center;
+        color: #ffff;
+        text-transform:uppercase;
+        font-family: sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        
+    }
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.2;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+}
+
+@media screen and (max-width:375px){
+    .kl{
+        text-align:center;
+        color: #ffff;
+        text-transform:uppercase;
+        font-family: sans-serif;
+        font-size: 15px;
+        position: absolute;
+        top:90%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    h1{
+        color: #ffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        text-shadow:  0 0 0px #ffff,
+                      0 0 0px #ffff,
+                      0 0 0px #ffff,
+                      0 0 0px #ffff,
+                      0 0 10px #ffff;
+        
+    
+    
+    
+    }
+
+    
+
+    .center h3{
+   
+        text-align:center;
+        color: #ffff;
+        text-transform:uppercase;
+        font-family: sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        
+    }
+
+    .center img{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        padding-top:60px;
+        
+    }
+
+    .rowitems{
+        position: absolute;
+        left: 50%;
+        top: 74%;
+        transform: translateX(-50%) translateY(-50% );
+        display: block;        
+    }
+
+    .more2{
+        padding: 15px 33px;
+        margin-right: 22px;
+
+    }
+
+    .btn1{
+        padding-bottom: 15px;
+    }
+
+    .more1{
+        padding:15px 80px;
+    }
+
+    .btnk{
+        padding: 15px 100px;
+        text-align:center;
+        font-size: 10x;
+    }
+
+    .btn1{
+        padding-right:0px;
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+/* ... Other styles ... */
+
+/* Add this to the end of your existing CSS */
+
+/* Responsive adjustments */
+@media screen and (max-width: 855px) {
+    nav ul {
+        display: none;
+    }
+
+    .menuicon {
+        display: flex;
+    }
+
+    .more1,
+    .more2 {
+        display: none;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .center img {
+        position: absolute;
+        top: 15%;
+    }
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.2;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .kl {
+        font-size: 15px;
+        top: 90%;
+    }
+
+    .center h3 {
+        font-size: 20px;
+        top: 60%;
+    }
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.2;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .kl {
+        font-size: 12px;
+        top: 90%;
+    }
+
+    .center h3 {
+        font-size: 18px;
+        top: 50%;
+    }
+
+    .center img {
+        padding-top: 60px;
+    }
+
+    .rowitems {
+        top: 74%;
+    }
+
+    .more2 {
+        padding: 15px 33px;
+        margin-right: 22px;
+    }
+
+    .btn1 {
+        padding-bottom: 15px;
+    }
+
+    .more1 {
+        padding: 15px 80px;
+    }
+
+    .btnk {
+        padding: 15px 100px;
+        font-size: 10px;
+    }
+
+    .btn1 {
+        padding-right: 0;
+    }
+}
+
+.bottom{
+    background-color: #010409;
+    padding-top: 60px;
+    
+}
+
+
+
+h1{
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 95px;
+    text-shadow:  0 0 0px #ffff,
+                  0 0 0px #ffff,
+                  0 0 0px #ffff,
+                  0 0 0px #ffff,
+                  0 0 10px #ffff;
+    
+
+
+
+}
+
+.content{
+    color:#ffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 17px;
+    font-weight: 500;
+    padding-bottom: 9px;
+    text-align: justify;
+    
+}
+
+.bottom{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+@media screen and (max-width: 500px) {
+        h1{
+            color: #ffff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            text-shadow:  0 0 0px #ffff,
+                          0 0 0px #ffff,
+                          0 0 0px #ffff,
+                          0 0 0px #ffff,
+                          0 0 10px #ffff;
+            
+        
+        
+        
+        }
+        .cardlist{
+            display:block;
+        }
+    
+        .faqcontent{
+            padding-top:10px;
+            line-height: 1.2;
+        }
+    
+        h1{
+            padding-bottom: 3px;
+        }
+        .card{
+            color: var(--clr-neutral-100);
+            background-image: url("src/Programming.jpg");
+            background-size: cover;
+            padding: 0.5px 0 0;
+            max-width: 30ch;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 500ms ease;
+            
+        
+        }
+
+
+
+}
+
+.card{
+    color: var(--clr-neutral-100);
+    background-image: url("src/Programming.jpg");
+    background-size: cover;
+    padding: 5rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    
+
+}
+
+.card-content{
+    --paddding:2rem;
+    padding: var(--paddding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.3) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(75%);
+    transition: transform 500ms ease;
+    transition-delay: 500ms;
+    
+}
+
+.faqcontent{
+    display: grid;
+    line-height: 1.6;
+    font-family: sans-serif;
+    padding-right: 2em;
+    padding-bottom: 3em;
+    padding-top: 4em;
+
+    
+    
+}
+
+
+
+.card-body{
+    color:rgba(255 255 255 / 0.85);
+    
+    
+}
+
+.card-title{
+   
+    position: relative;
+    width: max-content;
+    
+
+}
+
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: calc(var(--paddding) * -1);
+    width: calc(100% + var(--paddding));
+    bottom:-2px;
+    background: var(--crl-accent-400);
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+    
+}
+
+.card:hover .card-title::after{
+    transform:scaleX(1);
+}
+
+.card-button{
+    cursor:pointer;
+    display:inline;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color:var(--crl-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: .25em;
+}
+
+.card-button:hover,
+.card-button:focus{
+    background-color:var(--clr-neutral-100);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+
+.card:hover .card-content{
+    transform:translateY(0);
+    transition-delay: 500ms;
+}
+
+.card-content > *:not(.card-title) {
+    opacity:0;
+    transition:opacity 500ms linear;
+}
+
+.card:hover .card-content > *:not(.card-title){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+.cardlist{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+
+/* This is a single-line comment */
+
+
+
+.card2{
+    color: var(--clr-neutral-100);
+    background-image: url("src/PhotoGraphy.jpg");
+    background-size: cover;
+    padding: 5rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    
+
+}
+
+.card2:hover .card-title::after{
+    transform:scaleX(1);
+}
+
+
+
+.card2:hover{
+    transform: scale(1.05);
+}
+
+.card2:hover .card-content > *:not(.card-title){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+.card2:hover .card-content{
+    transform:translateY(0);
+    transition-delay: 500ms;
+}
+
+/* This is a single-line comment */
+
+.card1{
+    color: var(--clr-neutral-100);
+    background-image: url("src/web\ developer.jpg");
+    background-size: cover;
+    padding: 5rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    
+
+}
+
+.card1:hover .card-title::after{
+    transform:scaleX(1);
+}
+
+
+
+.card1:hover{
+    transform: scale(1.05);
+}
+
+.card1:hover .card-content > *:not(.card-title){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+.card1:hover .card-content{
+    transform:translateY(0);
+    transition-delay: 500ms;
+}
+
+/* This is a single-line comment */
+
+.card3{
+    color: var(--clr-neutral-100);
+    background-image: url("src/Hardwere.avif");
+    background-size: cover;
+    padding: 5rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    
+
+}
+
+.card3:hover .card-title::after{
+    transform:scaleX(1);
+}
+
+
+
+.card3:hover{
+    transform: scale(1.05);
+}
+
+.card3:hover .card-content > *:not(.card-title){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+.card3:hover .card-content{
+    transform:translateY(0);
+    transition-delay: 500ms;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.2;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+}
+
+/*-------------------- iPhone XR -----------------*/
+
+
+@media screen and (max-width: 414px) {
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.6;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 10px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+}
+
+/*-------------------- iPhone 12 -----------------*/
+
+
+@media screen and (max-width: 390px) {
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.4;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 10px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+}
+
+/*-------------------- iPhone 14 pro max -----------------*/
+
+
+@media screen and (max-width: 430px) {
+    .cardlist{
+        display:block;
+    }
+
+    .back-video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: auto;
+    
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.6;
+        
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 10px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 30ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+  
+
+}
+
+/*-------------------- Samsung S8 -----------------*/
+
+
+@media screen and (max-width: 360px) {
+    .cardlist{
+        display:block;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.1;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 10px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+}
+
+/*-------------------- iPad Mini -----------------*/
+
+
+@media screen and (max-width: 768px) {
+    .cardlist{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.7;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 10px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+}
+
+
+/*-------------------- iPad Air -----------------*/
+
+
+@media screen and (max-width: 820px) {
+    .cardlist{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 1.7;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 10px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+}
+
+/*-------------------- iPad Pro -----------------*/
+
+
+@media screen and (max-width: 1024px) {
+    .cardlist{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 2;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 10px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+}
+
+
+/*-------------------- iPad Pro -----------------*/
+
+
+@media screen and (max-width: 280px) {
+    .cardlist{
+        display:block;
+        justify-content: space-around;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 0.9;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+        font-size: 40px;
+    }
+
+    .content{
+        font-size: 15px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .bottom{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+   
+}
+
+
+/*-------------------- for all -----------------*/
+
+
+@media screen and (max-width: 450px) {
+    .cardlist{
+        display:block;
+        justify-content: space-between;
+    }
+
+    .faqcontent{
+        padding-top:10px;
+        line-height: 2;
+        padding-right: 5px;
+    }
+
+    h1{
+        padding-bottom: 3px;
+        font-size: 40px;
+    }
+
+    .content{
+        font-size: 15px;
+    }
+    .card{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Programming.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card1{
+        color: var(--clr-neutral-100);
+        background-image: url("src/web\ developer.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .card2{
+        color: var(--clr-neutral-100);
+        background-image: url("src/PhotoGraphy.jpg");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+    .card3{
+        color: var(--clr-neutral-100);
+        background-image: url("src/Hardwere.avif");
+        background-size: cover;
+        padding: 0.5px 0 0;
+        max-width: 35ch;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 500ms ease;
+        
+    
+    }
+
+    .bottom{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+   
+}
+
+footer{
+   background: #111;
+   height: auto;
+   
+   font-family: sans-serif;
+   padding-top: 40px;
+   color: #fff;
+   
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    page-break-inside: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color:aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 4;
+    font-weight: 200;
+}
+
+hr{
+    border: none;
+    background: #fff;
+    height: 1px;
+}
+
+
+.back-video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+section{
+   
+    
+    align-items: center;
+    
+}
